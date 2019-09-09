@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://learn.douglas.bc.ca/bbcswebdav/pid-828750-dt-content-rid-3031969_1/courses/CSIS-1280-004_15423_201710/ch9_demo1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Demo of Javascript</title>
+		<script src="Codelobster1.js" type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<form action="" method="post" name="ch9form">
+			
+			<p><input type="button" value="Displaying message inside function!" onclick="dispmsg()"> <br></p>
+
+			<p><input type="button" value="Returning message to display in form!" onclick="var output=returnmsg();document.ch9form.ch9outputbox.value=output;"><br></p>
+			
+			<p>Enter your name: <input type="text" name="ch9mname" value=""><br>
+			
+			<input type="button" value="Click here for your customized message" onclick="document.ch9form.ch9outputbox.value=customname(document.ch9form.ch9mname.value);"><br></p>
+			
+			<p>
+			<input type="button" value="Compute average no input"><br>
+			</p>
+			
+			<p>
+				Quiz 1: <input type="text" value="" name="quiz1"> <br>
+				Quiz 2: <input type="text" value="" name="quiz2"> <br>
+				Quiz 3: <input type="text" value="" name="quiz3"> <br>
+				<input type="button" value="Compute average with inputs" onclick="var output; output=averagewithinput(document.ch9form.quiz1.value, document.ch9form.quiz2.value, document.ch9form.quiz3.value); document.ch9form.ch9outputbox.value=output;"><br><br>
+			</p>
+			
+			<p>
+				<textarea name="ch9outputbox" cols="50" rows="2" style="background-color: Transparent; border: none; overflow:hidden"></textarea><br>
+			</p>
+		</form>
+	
+</body></html>
