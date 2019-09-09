@@ -1,0 +1,145 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<title>Royal City Bowling Lanes</title>
+<meta name="" content="">
+
+<style>
+	
+	h1 {
+		font-family: elephant; 
+	}
+	label{
+		font-style: italic;
+	}
+</style>
+
+</head>
+
+<!-- INSERT YOUR NAME HERE 
+//START OF STUDENT INFORMATION
+
+STUDENT NAME: Leonardo Kafuri
+STUDENT ID: 300265732
+DATE COMPLETED: 05/10/2018
+
+//END OF STUDENT INFORMATION 
+-->
+
+
+<body id="setbgcolor" style="background-color: #AFD275" >
+
+
+
+<table > 
+	<tr>
+		<td>
+<table>
+		<tr>
+			<td valign="top" width="500">
+				<h1> Royal City Bowling Lanes</h1>
+				
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>
+			   <h2> 2018 Bowling Teams</h2>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+			    <h2>Team 1 Roster</h2>
+			</td>
+		</tr>
+		
+	    <tr>
+			<td>
+				<form action="">
+				<p>
+				Bowler's name
+				<input type="text" name="bowlerName" id="tm1BowlerName" />
+				<input type="button" id="addTm1Bowler" value="Add Bowler" /></p>
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+    
+				<table id="team1Roster" class="teams" border="1">
+					<tr>
+					<td>Your team roster is empty </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- -->
+		<tr> 
+			<td> <br />
+			    <h2>Team 2 Roster</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="">
+				<p>
+				Bowler's name
+				<input type="text" name="bowlerName" id="tm2BowlerName" />
+				<input type="button" id="addTm2Bowler" value="Add Bowler" /></p>
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+    
+				<table id="team2Roster" class="teams" border="1">
+					<tr>
+					<td>Your team roster is empty </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+
+	</table>
+	</td>
+	<td with="150">&nbsp;</td>
+	<td with="400" valign="top">
+		<br /> <br /> <br /> <br /> <br /> 
+		<h2>Popular Bowling Slogans</h2>
+		
+		<label id="display">
+		
+		What happens at the bowling alley, stays at the bowling alley. <br />
+		Try it, you'll strike it. <br />
+		No splits too wide if you got the balls. <br />
+		Teamwork makes the dream work.
+		
+		</label>
+		 
+	<td with="150">&nbsp;</td>
+	<td valign="top" width="400"><img id="pinBall" src="Images/ball0.png" alt="Image of a pin ball." />
+			</td> 
+	
+	</tr>
+</table>	
+	<br /> <br /> <br />
+	
+	<script src="as1_script.js"> // question 1
+	 </script>
+	 <script> //question 2 
+	  setInterval(ChangePageColor,10000);
+	 </script>
+	 <script>//question3
+	 	setInterval(DisplayBowlingSlogans,7500);
+	 </script>
+	 <script> //question 4
+	  setInterval(SpinPinBalls,150);
+	 </script>
+	
+</body>
+</html>
