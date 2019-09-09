@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Passing values from textfields to php</title>
+	</head>
+	<body>
+		<form  action="Example.php"  method="POST" >
+			<table> 
+			<tr style="background: #9794b2">
+			<td>Item</td>
+			<td>Quantity</td>
+			</tr>
+			
+			<tr>
+			<td>Iphone Xs</td>
+			<td><input type="number" name="iphonexsqty" min="0" max="10"/> </td>	
+			</tr>
+			
+			<tr>
+			<td>Iphone Xs Max</td>
+			<td><input type="number" name="iphonexsmqty" min="0" max="10"/> </td>	
+			</tr>
+			
+			
+			<tr>
+			<td>Iphone XR</td>
+			<td><input type="number" name="iphonexrqty" min="0" max="10"/> </td>	
+			</tr>
+			
+			<tr>
+      		<td>How did you find Apple?</td>
+     		 <td><select name="find">
+     		   <option value = "a">I'm a regular customer</option>
+    		   <option value = "b">TV advertising</option>
+   			   <option value = "c">Phone directory</option>
+   			   <option value = "d">Word of mouth</option>
+   		   </select>
+     		 </td>
+   		 </tr> 
+   		   
+			<tr>
+     		<td colspan="2" style="text-align: center;"><input type="submit" value="Submit Order" /></td>
+    		</tr>			
+			</table>
+		</form>
+		
+		
+	</body>
+</html>

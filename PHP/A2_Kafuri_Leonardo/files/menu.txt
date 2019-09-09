@@ -1,0 +1,5 @@
+Double-Double,8.25,Images/double.png
+Cheeseburger,7.75,Images/cheeseburger.png
+Hamburger,6.75,Images/hamburger.png
+Fries,1.75,Images/fries.png
+Beverages,1.75,Images/beverage.png
