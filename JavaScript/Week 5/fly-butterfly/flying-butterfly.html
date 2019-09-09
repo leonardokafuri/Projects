@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Central Valley Floral Design</title>
+    <meta name="" content="">
+    <link href="css.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body >
+    <p>
+        <img src="butterfly.gif" id="butterfly" style="position: absolute; left: -100px; top: 250px;
+            visibility: hidden" alt="Image of a butterfly" height="120" width="150" />
+    </p>
+    <div id="page">
+        <div>
+            <img alt="" src="images/head.jpg" width="800" height="213" border="0" /></div>
+        <div id="ml">
+            <img alt="" src="images/ml.jpg" width="474" height="159" border="0" /></div>
+        <div id="m">
+            <div>
+                <a href="index.html">
+                    <img alt="" src="images/m1.jpg" width="326" height="34" border="0" /></a></div>
+            <div>
+                <a href="">
+                    <img alt="" src="images/m2.jpg" width="326" height="28" border="0" /></a></div>
+            <div>
+                <a href="orders.html">
+                    <img alt="" src="images/m3.jpg" width="326" height="29" border="0" /></a></div>
+            <div>
+                <a href="">
+                    <img alt="" src="images/m4.jpg" width="326" height="30" border="0" /></a></div>
+            <div>
+                <a href="">
+                    <img alt="" src="images/m5.jpg" width="326" height="38" border="0" /></a></div>
+        </div>
+        <div id="c">
+            <div id="c2">
+                <div id="l">
+                    <img alt="" src="images/l.gif" width="51" height="43" border="0" /></div>
+                <div id="cont">
+                    <div id="wellcome_col">
+                        <div id="border_rt">
+                            <img alt="" src="images/border_rt.gif" width="49" height="21" border="0" /></div>
+                        <div id="wellcome_cont">
+                            <p>
+                                <img alt="" src="images/h_well.gif" width="89" height="25" border="0" /></p>
+                            <p>
+                                Central Valley Floral Design is committed to offering only the finest floral arrangements and gifts with prompt and friendly service.
+                                We choose only the freshest, highest quality flowers and our shop has a professional and caring staff to serve all your floral needs. Your gift will arrive beautifully presented and personalized with your message.</p>
+                            <div align="right">
+                                <a href="" class="more">READ MORE</a><img alt="" src="images/arrow.gif" width="8"
+                                    height="7" border="0" /></div>
+                        </div>
+                        <div id="border_b">
+                            <img alt="" src="images/border_rb.gif" width="49" height="26" border="0" /></div>
+                    </div>
+                    <div id="sample_col">
+                        <p>
+                            <img alt="" src="images/h_occasion.gif" width="89" height="25" border="0" /></p>
+                        <ul>
+                            <li>Birthdays</li>
+                            <li>Anniversary</li>
+                            <li>Sympathy</li>
+                            <li>Get well</li>
+                            <li>Holidays</li>
+                            <li>Thanks</li>
+                            <li>Any occasion!</li>
+                        </ul>
+                    </div>
+                    <div id="fresh">
+                        <h1>
+                            <img alt="" src="images/h_fresh.gif" width="76" height="25" border="0" /></h1>
+                        <div class="pic">
+                            <a href="">
+                                <img alt="" src="images/pic1.jpg" width="112" height="75" border="0" /></a></div>
+                        <div class="pic">
+                            <a href="">
+                                <img alt="" src="images/pic2.jpg" width="112" height="75" border="0" /></a></div>
+                        <div class="pic">
+                            <a href="">
+                                <img alt="" src="images/pic3.jpg" width="112" height="75" border="0" /></a></div>
+                        <div class="pic">
+                            <a href="">
+                                <img alt="" src="images/pic4.jpg" width="112" height="75" border="0" /></a></div>
+                        <div class="pic">
+                            <a href="">
+                                <img alt="" src="images/pic5.jpg" width="112" height="75" border="0" /></a></div>
+                        <div align="right">
+                            <a href="" class="more">NEXT</a><img alt="" src="images/arrow.gif" width="8" height="7"
+                                border="0" /></div>
+                    </div>
+                </div>
+                <div id="r">
+                    <img alt="" src="images/emp.gif" width="50" height="1" border="0" /></div>
+            </div>
+        </div>
+        <div id="f">
+            &copy; 2006 Central Valley Floral Design. All rights reserved. Read Legal policy
+            and Privacy policy.</div>
+    </div>
+<script>
+	//starting values
+	var topPos = 250; 
+	var lefPos = -100;
+	
+	//fly butterfly function
+	function fly()
+	{
+		//reference the image 
+		var butterfly = document.getElementById("butterfly");
+		//change the x postion of the butterfly
+		//starting values as pixels
+		butterfly.style.left = lefPos + "px";
+		butterfly.style.top = topPos + "px";
+		
+		//change visibility propety to visible
+		butterfly.style.visibility = "visible";
+		
+		//increase x by steps of 10 pixels
+		lefPos += 10;
+		//decrease y by steps of 2 pixels
+		topPos -= 2;
+		
+		// if butterfly is going out of screen, go back to original Position
+	/*	if(lefPos >= screen.availWidth -150 || topPos>= screen.availHeight -120)
+		{
+			lefPos = -100;
+			topPos = 250;
+			// goes to the end of the screen and resets
+		}*/
+		
+		if (lefPos >= 500 )
+		{
+			StopFunction();
+		}
+
+
+	}
+	function StopFunction()
+	{
+		clearInterval(stop);
+	}
+	//call function using setInterval()
+	var stop = setInterval(fly,50);
+	//setInterval(fly,50);
+	
+	
+	
+</script>
+    
+</body>
+</html>

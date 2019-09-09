@@ -1,0 +1,164 @@
+BODY {
+	FONT-FAMILY: Tahoma, Arial, Verdana, sans-serif;
+	FONT-SIZE: 11px;
+	COLOR: #1F3911;
+	BACKGROUND-COLOR:#FFFFFF;
+	text-align: center;
+	margin:0px;
+}
+
+TD {
+	FONT-FAMILY: Tahoma, Arial, Verdana, sans-serif;
+	FONT-SIZE: 11px;
+}
+
+.form_element{
+	WIDTH:96%;
+}
+
+#page{
+	margin: 0 auto 0 auto;
+	text-align: left;
+	width: 800px;
+}
+
+#ml{
+	float:left;
+	width:474px;
+}
+
+#m{
+	float:left;
+}
+
+#l{
+	width:51px;
+	float:left;
+	background:url(i/l.gif) no-repeat 0px 0px;
+}
+
+#c{
+	background:url(i/l_bg.gif) repeat-y 0px 0px;
+	width: 800px;
+}
+
+#c2{
+	background:url(i/r_bg.gif) repeat-y 100% 0px;
+	width: 800px;
+}
+
+#cont{
+	background-color:#FFFFFF;
+	width:699px;
+	float:left;
+	padding-bottom:10px;
+}
+
+#r{
+	margin-left:750px;
+	background:url(i/r.gif) no-repeat 0px 0px;
+}
+
+#px10{
+	font-size:10px;
+}
+
+#sample_col{
+	padding:19px 20px 0px 0px;
+	background:url(i/slise.gif) no-repeat 0px 0px;
+	margin-left:420px;
+}
+
+#wellcome_col{
+	background:url(i/border_r.gif) repeat-y 100% 0px;
+	width:466px;
+	float:left;
+}
+
+#wellcome_cont{
+	padding:19px 57px 0px 22px;
+}
+
+#border_rt{
+	float:right;
+	width:49px;
+}
+
+#border_b{
+	text-align:right;
+	background:url(i/border_b.gif) repeat-x 0px 0px;
+}
+
+A.more{
+	color:#848571;
+	text-decoration:none;
+	font-size:9px;
+	font-weight:bold;
+	clear:both;
+}
+
+#cont_col{
+	width:466px;
+	float:left;
+	padding:19px 57px 0px 22px;
+}
+
+
+#fresh{
+	padding:20px;
+	clear:both;
+}
+
+div.pic{
+	float:left;
+	margin:0px 15px 0px 0px;
+}
+
+#f{
+	clear:both;
+	background:url(i/f.gif) no-repeat 0px 0px;
+	background-color:#F1E9D2;
+	padding:36px 0px 50px 0px;
+	text-align:center;
+	font-size:10px;
+	width:800px;
+}
+
+#f A{
+	COLOR:#5C0100;
+}
+
+H1 {
+	FONT-SIZE: 16px;
+	COLOR: #1F3911;
+	MARGIN:0px 0px 15px 0px;
+}
+P{
+	FONT-FAMILY: Tahoma, Verdana, sans-serif;
+	TEXT-INDENT: 0px;
+	FONT-SIZE: 11px;
+	COLOR: #1F3911;
+	MARGIN:0px 0px 10px 0px;
+}
+LI {
+	FONT-SIZE: 11px;
+	COLOR: #1F3911;
+	LIST-STYLE-IMAGE:url(i/li.gif);
+	MARGIN-BOTTOM:2px;
+}
+UL{
+	MARGIN:0px 0px 20px 20px;
+}
+INPUT{
+	FONT-SIZE: 11px;
+	COLOR: #1F3911;
+}
+TEXTAREA{
+	FONT-FAMILY: Tahoma, sans-serif;
+	FONT-SIZE: 11px;
+	COLOR: #1F3911;
+}
+
+A,A:active,A:visited,A:hover{
+	COLOR: #DA4727;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+
+<style>
+	body {
+		background-color:#a3fcfc;
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+
+<h1>To-Do Task List</h1>
+
+<table>
+		<tr>
+			
+			<td>
+				<form action="">
+				<p>
+				Please enter a task to add to the list:
+				<input type="text"  name="taskName" id="taskName" size="50" value=""/>
+				<input type="button" id="btn1" value="Add to list" /></p>
+				</form>
+			</td>
+		</tr>
+</table>
+
+<h2>My To-do List</h2>
+
+<table id="myToDoList" style="border: 1px solid black">
+					<tr id="row0">
+					<td>Your to-do list is empty! </td>
+					</tr>
+</table>
+
+<script>
+//create a function to add items to the "to do" list" and a function to remove items from the list
+
+//variable for list status (i.e., whether it is empty or not)
+var emptyList = true;
+var emptyString="Your team roster is empty";
+//variable to track index of list item
+var listItemIndx = 0;
+
+//function to add tasks to list
+function addTaskToList(listItemIndx){
+	
+	
+	//check if the to do list is empty before adding items. If so, delete the default Text
+	var numRows = document.getElementById("myToDoList").rows.lentgh;
+	if(emptyList){
+	
+		document.getElementById("myToDoList").deleteRow(0);
+	}
+
+
+//get input vale from textbox
+var taskItem = document.getElementById("taskName").value;
+
+//dynamically insert task item to the list
+
+var tblToDoList = document.getElementById("myToDoList");
+
+//create new task row
+var taskRow = document.createElement("tr") ;
+taskRow.setAttribute("id",listItemIndx);
+
+//create row data cells
+var tdItem = document.createElement("td");
+var tdBtn = document.createElement("td");
+
+//create textnode for first cell
+var txt = document.createTextNode(taskItem);
+
+//create a button for the second cell
+var btn = document.createElement("input");
+
+//set attributes for the button
+//input type
+btn.setAttribute("type", "button");
+
+//set name
+btn.setAttribute("name","remove");
+
+//set value
+btn.setAttribute("value","Remove Item");
+
+//associate the button element with the item to be removed
+//using onclick event
+btn.setAttribute("onclick", "removeItem(this.parentElement.parentElement)");
+
+
+//append item and button to td elements
+tdItem.appendChild(txt);
+tdBtn.appendChild(btn);
+
+//append td  elements to tr element
+taskRow.appendChild(tdItem);
+taskRow.appendChild(tdBtn);
+
+//append row element to table
+tblToDoList.appendChild(taskRow);
+
+//increment index
+listItemIndx++;
+emptyList=false;
+}
+
+
+//function to remove list items
+function removeItem(trlistItemIndx){
+
+	//delete selected row
+	trlistItemIndx.parentElement.removeChild(trlistItemIndx);
+	
+	//display default Text
+	if(document.getElementById("myToDoList").rows.length==0){
+			emptyList=true;
+			var trow=document.createElement('tr');
+			var tdR=document.createElement('td');
+			tdR.appendChild(document.createTextNode(emptyString));
+			trow.appendChild(tdR);
+			document.getElementById("myToDoList").appendChild(trow);
+		}
+	
+}
+
+
+
+
+
+//call function using button click event
+document.getElementById("btn1").onclick = function(){addTaskToList();}
+
+
+
+	
+</script>
+<!--<input type=button name="remove" value="Remove Item" /> -->
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- link to jQuery library -->
+	
+	<style>
+		
+	.ac-toggle{
+		/*show pointer/cursor */
+		cursor: pointer;
+	}
+	.ac-content{
+		/*Hide movie review initially */
+		display:none;
+	}	
+		
+	</style>	
+		
+	</head>
+	<body>
+	<h1>jQuery Effects and Animations</h1>
+
+
+<h2>slideToggle()</h2>
+<!-- Create Accordion Div -->
+<div id="accordion">
+	<h3 class="ac-toggle">Blade Runner 2049 </h3>
+	<div class="ac-content">
+		<p> 
+		<em>Critics Consensus:</em> Visually stunning and narratively satisfying, Blade Runner 2049 deepens and expands its predecessor's story while standing as an impressive filmmaking achievement in its own right.
+		</p>
+	</div>
+		
+	
+	
+	<h3 class="ac-toggle"> 
+Jigsaw </h3>
+	<div class="ac-content">
+		<p> 
+		<em>Critics Consensus:</em> Jigsaw definitely won't win many converts to the Saw franchise, but for longtime fans, it should prove a respectably revolting -- if rarely scary -- diversion.
+		</p>
+	</div>
+		
+	
+	
+	
+	<h3 class="ac-toggle">
+STRANGER THINGS: SEASON 2 </h3>
+	<div class="ac-content">
+		<p> 
+		<em>Critics Consensus:</em> Stranger Things' slow-building sophomore season balances moments of humor and a nostalgic sweetness against a growing horror that's all the more effective thanks to the show's full-bodied characters and evocative tone.
+		</p>
+	</div>
+		
+	
+	
+<h3 class="ac-toggle"> 	
+THOR: RAGNAROK </h3>
+	<div class="ac-content">
+		<p> 
+		<em>Critics Consensus:</em> Exciting, funny, and above all fun, Thor: Ragnarok is a colorful cosmic adventure that sets a new standard for its franchise -- and the rest of the Marvel Cinematic Universe.
+		</p>
+	</div>
+		
+	
+	
+	<h3 class="ac-toggle">
+IT </h3>
+	<div class="ac-content">
+		<p> 
+		<em>Critics Consensus:</em>  Well-acted and fiendishly frightening with an emotionally affecting story at its core, It amplifies the horror in Stephen King's classic story without losing touch with its heart.
+		</p>
+	</div>
+		
+	
+	</div>
+
+<script>
+	
+	$(document).ready(function(){
+		//refere accoridion panel using its_id and find main content associated with click event 
+		$('#accordion').find('.ac-toggle').click(function(){
+		// expand/collapse the subpanel as they are clicked 
+		$(this).next().slideToggle(); // has a default value for the time of the animation
+		
+		//hide content of subpanels not clicked 
+		$('.ac-content').not($(this).next()).slideUp(1000); // you can select how long it takes the animation to occur by puttingthe milisecnds 
+			
+			
+		});
+
+
+	});
+
+	
+</script>
+
+		
+	</body>
+</html>

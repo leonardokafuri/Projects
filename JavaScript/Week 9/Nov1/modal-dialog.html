@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}	
+	
+	
+	
+</style>
+
+</head>
+<body>
+
+<a class="btn" id="container" data-popup-open="popup-1" href="#">Display Poem</a>
+ 
+<div class="popup" id="content" >
+    <div class="popup-inner">
+        <h2>The Rose Family! This is Awesome! (Popup #1)</h2>
+        <pre><p>
+        The rose is a rose,
+        And was always a rose.
+        But the theory now goes
+        That the apple’s a rose,
+        And the pear is, and so’s
+        The plum, I suppose.
+        The dear only knows
+        What will next prove a rose.
+        You, of course, are a rose –
+        But were always a rose.
+		</p></pre>
+		
+        <p><a data-popup-close="popup-1" class="close" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+</div>
+
+<script>
+
+	//check that DOM is rendered
+	$(document).ready(function(){
+		//referece button
+		$('#container').click(function()
+		{
+			//fade in the model
+			$(".popup").fadeIn("slow");
+			
+		});
+		//close the popuop using link
+		$(".close").click(function()
+		{
+			$(".popup").fadeOut("slow");
+			
+		});
+		
+		//close popup using X icon
+		$(".popup-close").click(function()
+		{
+			$(".popup").fadeOut("slow");
+			
+		});
+		
+		
+    });// works without document.ready 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+
+
+
+</body>
+</html>

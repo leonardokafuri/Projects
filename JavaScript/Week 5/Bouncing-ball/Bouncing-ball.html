@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<title>Bounce</title>
+<meta name="" content="">
+<script type="text/javascript">
+
+var bounceSpeed = 5;
+var widthMax = 0;
+var heightMax = 0;
+var xPosition = 0;
+var yPosition = 0;
+var xDirection = "right";
+var yDirection = "down";
+var ballBounce;
+function setBall() {
+	/*if (navigator.appName == "Microsoft Internet Explorer") {
+		widthMax = document.documentElement.clientWidth;
+		heightMax = document.documentElement.clientHeight;
+	}
+	else {*/
+		widthMax = window.innerWidth-14;
+		heightMax = window.innerHeight;
+	//}
+	//clearTimeout(ballBounce);
+	bounceBall();
+}
+function bounceBall() {
+	if (xDirection == "right" && xPosition > (widthMax - document.getElementById("ballImage").width - bounceSpeed))
+		xDirection = "left";
+	else if (xDirection == "left" && xPosition < (0 + bounceSpeed))
+		xDirection = "right";
+	if (yDirection == "down" && yPosition > (heightMax - document.getElementById("ballImage").height - bounceSpeed))
+		yDirection = "up";
+	else if (yDirection == "up" && yPosition < (0 + bounceSpeed))
+		yDirection = "down";
+	if (xDirection == "right")
+		xPosition = xPosition + bounceSpeed;
+	else if (xDirection == "left")
+		xPosition = xPosition - bounceSpeed;
+	else
+		xPosition = xPosition;
+	if (yDirection == "down")
+		yPosition = yPosition + bounceSpeed;
+	else if (yDirection == "up")
+		yPosition = yPosition - bounceSpeed;
+	else
+		yPosition = yPosition;
+	document.getElementById("ballElement").style.left = xPosition + "px";
+	document.getElementById("ballElement").style.top = yPosition + "px";
+	//clearTimeout(ballBounce);
+	ballBounce = setTimeout('bounceBall()',30);
+}
+window.onresize = setBall;
+
+</script>
+</head>
+<body onload="setBall()">
+<div id="ballElement" style="position:absolute;left:0px;top:0px"><img id="ballImage" src="ball.gif" alt="Image of a ball" height="48" width="48" /></div>
+</body>
+</html>

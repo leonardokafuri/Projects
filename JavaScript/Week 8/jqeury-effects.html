@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<!-- link to jQuery library -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		
+	.ac-toggle{
+		/*show pointer/cursor */
+		cursor: pointer;
+	}
+	.ac-content{
+		/*Hide movie review initially */
+		display:none;
+	}	
+		
+	</style>	
+		
+	</head>
+	<body>
+	<h1>jQuery Effects and Animations</h1>
+	<h2>Hiding and Showing Elements</h2>
+	<h3>show() and hide() methods without parameters</h3>
+	
+	<div id="jquery-img">
+		
+		<img src="images/js-jquery.jpg" alt="js-jquery book" />
+	</div>
+	
+	<p>
+		<button id="show">Show Image</button>
+		<button id="hide">Hide Image</button>
+		
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference show image button 
+		$('#show').click(function(){
+		//call show method to show image 
+		$('#jquery-img').show();	
+			
+		})	
+		$('#hide').click(function(){
+		//call show method to show image 
+		$('#jquery-img').hide();	
+			
+		})	
+
+		});
+		
+		//show and hide can take 2 paramenters 
+		//show(speed, callback)
+		//the speed is for how quickly to manipulate the objct can be used in text by slow or fast or in miliseconds 
+		// callback is the function that can be executed after the effect
+		
+	</script>
+	
+	
+	
+	<h3>show() and hide() methods with parameters</h3>
+	
+	<div id="jquery-img1">
+		
+		<img src="images/js-jquery.jpg" alt="js-jquery book" />
+	</div>
+	
+	<p>
+		<button id="show1">Show Image</button>
+		<button id="hide1">Hide Image</button>
+		<script>
+		$(document).ready(function(){
+		//reference show image button 
+		$('#show1').click(function(){
+		//call show method to show image 
+		$('#jquery-img1').show(4800,function(){alert("Well that took a while");});	
+			
+		})	
+		$('#hide1').click(function(){
+		//call show method to show image 
+		$('#jquery-img1').hide("fast");	
+			
+		})	
+
+		});
+			
+		</script>
+		
+		
+	</p>
+	
+<h2>Toggle() Method</h2>
+
+<div id="div1" >
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<div id="div2" style="display:none">
+<img src="images/js-jquery2.jpg" alt="js-jquery book" />
+	
+</div>
+
+<p>
+		<button id="toggle">Toggle Images</button>
+		<!--<button id="toggle1">Toggle Images</button> -->
+		
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#toggle').click(function(){
+		//call show method to show image 
+		$('#div1,#div2').toggle(1500,function(){alert("Cool toggle");});	
+		})	
+		});
+		
+		
+	</script>
+	
+
+	
+	<h2>fadeIn() and fadeOut()</h2>
+	
+	<div id="divfade">
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<p>
+		<button id="fadein">Fade In</button>
+		<button id="fadeout">Fade Out</button> 
+		
+		
+	</p>
+	
+	<script>
+		$(document).ready(function(){
+		//reference fade image button 
+		$('#fadein').click(function(){
+		//call show method to show image 
+		$('#divfade').fadeIn(1500,function(){alert("Cool fade");});	
+			
+		})	
+		$('#fadeout').click(function(){
+		//call show method to show image 
+		$('#divfade').fadeOut("fast");	
+			
+		})	
+
+		});
+			
+		</script>
+	
+	<h2>FadeToggle() Method</h2>
+
+<div id="div3" >
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<div id="div4" style="display:none">
+<img src="images/js-jquery2.jpg" alt="js-jquery book" />
+	
+</div>
+
+<p>
+		<button id="fadetoggle">Toggle Images</button>
+		<!--<button id="toggle1">Toggle Images</button> -->
+		
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#fadetoggle').click(function(){
+		//call show method to show image 
+		$('#div3,#div4').fadeToggle(1500);	
+		})	
+		});
+		
+		
+	</script>
+	
+	
+	
+	<h2>fadeTo()</h2>
+	
+	<div id="fadeTo">
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<p>
+		<button id="pale">Lighter Image</button>
+		<button id="dark">Darker Image</button> 
+		
+		
+	</p>
+		<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#pale').click(function(){
+		//call show method to show image 
+		$('#fadeTo').fadeTo(500,0.25);	
+		})
+		$('#dark').click(function(){
+		//call show method to show image 
+		$('#fadeTo').fadeTo(500,0.85);	
+		})
+			
+		});
+		
+		
+	</script>
+	
+
+
+<h2>slideUp() and slideDown()</h2>
+	
+	<div id="slide">
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<p>
+		<button id="slideUp">Slide Up</button>
+		<button id="slideDown">Slide Down</button> 
+		
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#slideUp').click(function(){
+		//call show method to show image 
+		$('#slide').slideUp("slow");	
+		})
+		$('#slideDown').click(function(){
+		//call show method to show image 
+		$('#slide').slideDown("slow");	
+		})
+			
+		});
+		
+		
+	</script>
+
+
+
+<h2>slideToggle() </h2>
+	
+	<div id="slide1">
+	<img src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+<p>
+		<button id="slideToggle">Slide Toggle</button>
+		
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#slideToggle').click(function(){
+		//call show method to show image 
+		$('#slide1').slideToggle("slow");	
+		})
+			
+		});
+		
+		
+	</script>
+	
+	
+	<h2>Animate() </h2>
+	
+	<div id="move" style="position:relative">
+	<img id="img" src="images/js-jquery1.jpg" alt="js-jquery book" />
+</div>
+
+	<p>
+		<button id="animate">Move Image</button>
+		<button id="stop">Stop Image</button>
+		
+	</p>
+	<script>
+		$(document).ready(function(){
+		//reference toggle image button 
+		$('#animate').click(function(){
+		//call animate method to move image 
+		$('#move, #img').animate({left:'500px', top:'-500px', heigh:'+=250',width:'+=250'},5000);
+		//$('#move, #img').animate({left:'300', top:'-300', heigh:'250',width:'150'},"slow");
+		})
+		
+		$('#stop').click(function(){
+		$('#move, #img').stop();		
+		});
+		
+		});
+		// make the carrousel work for assigment 2
+		
+	</script>
+
+		
+	</body>
+</html>

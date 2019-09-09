@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Running Puppy</title>
+<meta name="" content="">
+
+</head>
+<body >
+<h1>Running Puppy</h1>
+<p><img id="puppy" src="Images/puppy0.gif" height="60" width="97" alt="Image of a puppy." /></p>
+
+<script>
+	//begging by chaching images (load them into an array )
+	//6 images 
+	arrPuppies = new Array(6);
+	//indentify the currently loaded image 
+	var curPuppy = 0;
+	for (var i=0; i<arrPuppies.length; i++)
+	{
+		arrPuppies[i] = "Images/puppy" + i + ".gif";
+	}
+	
+	//create a function to animate the images 
+	function animatePuppies()
+	{
+		// test for current image 
+		if(curPuppy==5)
+		{
+			// go to the first 
+			curPuppy=0;
+		}else {
+			//keep loading next image 
+			curPuppy++;
+		}
+		document.getElementById("puppy").src = arrPuppies[curPuppy];
+	}
+	//refernece img attribute to set its value
+	
+	//set interval to repeat animation
+	setInterval(animatePuppies,75);
+	
+	
+	
+</script>
+
+</body>
+</html>
