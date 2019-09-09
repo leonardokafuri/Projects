@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DatabaseApp</string>
+    <string name="hint1">First Name</string>
+    <string name="hint2">Last Name</string>
+    <string name="hint3">Cell Number</string>
+    <string name="abtn">Add Record</string>
+    <string name="vbtn">View Records</string>
+    <string name="ubbtn">Update Records</string>
+    <string name="dbbtn">Delete Records</string>
+</resources>

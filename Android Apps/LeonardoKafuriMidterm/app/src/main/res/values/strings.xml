@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LeonardoKafuriMidterm</string>
+    <string name="Myname">Leonardo Kafuri</string>
+    <string name="midterm">Midterm Exam</string>
+    <string name="course">CSIS 3175-001</string>
+    <string name="studentid">300265732</string>
+    <string name="btn1">CLICK HERE TO ENTER</string>
+    <string name="calculator">Tiling Calculator</string>
+    <string name="hint1">Enter width in feet</string>
+    <string name="hint2">Enter length in feet</string>
+    <string-array name="type">
+        <item>12x12</item>
+        <item>18x18</item>
+    </string-array>
+    <string name="btn2">FIND NUMBER OF TILES</string>
+    <string name="prompt">Select a group</string>
+</resources>

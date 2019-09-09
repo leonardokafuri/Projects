@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chapter5App</string>
+    <string name="txtTitle">Tourist App</string>
+    <string name="txtScience">Science World</string>
+    <string name="txtStanley">Stanley Park</string>
+    <string name="txtCanad">Canada Place</string>
+    <string name="txtCapilano">Capilano Bridge</string>
+    <string name="imgdes">Image description</string>
+</resources>

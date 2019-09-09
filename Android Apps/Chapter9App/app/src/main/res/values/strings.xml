@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chapter9App</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="textBike">Bikes are fun to ride.</string>
+    <string name="txtBarge">This luxury boat leave beautiful city</string>
+    <string name="txtBuda">The majestic building in Budapest</string>
+    <string name="title">Summer - Bike and Barge Tour</string>
+    <string name="txtInfo">Join us fot a dream vacation filled with biking and etc etc..</string>
+    <string name="imgDes">Bike and Barge image</string>
+</resources>

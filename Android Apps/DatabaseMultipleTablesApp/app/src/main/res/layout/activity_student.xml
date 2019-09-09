@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <EditText
+        android:id="@+id/editTextFN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/FName"
+        android:inputType="textPersonName"
+        tools:ignore="autofill"/>
+
+    <EditText
+        android:id="@+id/editTextLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:ems="10"
+        android:hint="@string/LName"
+        android:inputType="textPersonName"
+        tools:ignore="autofill"/>
+
+    <EditText
+        android:id="@+id/editTextCN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:hint="@string/CNumber"
+        android:inputType="textPersonName"
+        tools:ignore="autofill"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="227dp"
+        android:text="@string/aButton"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnHm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:text="@string/hButton"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="234dp"
+        android:ems="10"
+        android:hint="@string/pid"
+        android:inputType="textPersonName"
+        tools:ignore="autofill"/>
+</RelativeLayout>

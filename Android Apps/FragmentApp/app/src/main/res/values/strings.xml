@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FragmentApp</string>
+    <string name="btn1">One</string>
+    <string name="btn2">Two</string>
+    <string name="txfrag1">Text from first fragment </string>
+    <string name="txfrag2">Text from second fragment </string>
+    <string name="btn3">Click it</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

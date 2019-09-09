@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InClassApp5</string>
+    <string name="contendDes">An image</string>
+    <string name="tim">800 Carnarvon St unit#205, New Westminster, BC V3M 0C3 </string>
+    <string name="star"> 601 Columbia St, New Westminster, BC V3M 1A7 </string>
+    <string name="waves">715 Columbia St, New Westminster, BC V3M 1B2 </string>
+    <string name="blenz">610 6th St, New Westminster, BC V3L 3B9 </string>
+    <string name="prado">13475 103 Ave, Surrey, BC V3T 0L8 </string>
+</resources>

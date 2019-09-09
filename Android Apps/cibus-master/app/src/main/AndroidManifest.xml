@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leonardokafuri.cibus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.RestaurantMenu"></activity>
+        <activity android:name=".ui.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Registration" />
+        <activity android:name=".ui.ForgotPassword" />
+        <activity android:name=".ui.ConfirmAddress" />
+
+
+        <activity android:name=".ui.Restaurants"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.OrderConfirmation" />
+        <activity android:name=".ui.Payment" />
+        <activity android:name=".ui.History" />
+        <activity android:name=".ui.Promotion" />
+        <activity android:name=".ui.AccountInfo" />
+
+    </application>
+
+</manifest>

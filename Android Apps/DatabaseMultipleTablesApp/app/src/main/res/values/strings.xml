@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DatabaseMultipleTablesApp</string>
+    <string name="FName">Enter First Name</string>
+    <string name="LName">Enter Last Name</string>
+    <string name="CNumber">Enter Cell Number</string>
+    <string name="pid">Enter Province Id</string>
+    <string name="aButton">Add Student Record</string>
+    <string name="aPButton">Add Province Recrod</string>
+    <string name="vButton">View the Records</string>
+    <string name="hButton">Home</string>
+</resources>

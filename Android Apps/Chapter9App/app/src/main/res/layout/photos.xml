@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/BikeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imgDes"
+            android:src="@drawable/bike"
+            />
+        <TextView
+            android:id="@+id/textBike"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textBike"
+            android:textSize="25sp"
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:id="@+id/BarcImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imgDes"
+            android:src="@drawable/barge"
+            />
+        <TextView
+            android:id="@+id/textBarge"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBarge"
+            android:textSize="25sp"
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:id="@+id/BudapestImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imgDes"
+            android:src="@drawable/budapest"
+            />
+        <TextView
+            android:id="@+id/textBuda"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBuda"
+            android:textSize="25sp"
+            />
+
+
+
+    </TableRow>
+
+</TableLayout>
