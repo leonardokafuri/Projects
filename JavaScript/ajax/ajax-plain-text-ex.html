@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+	<h1>Upcoming Latest Movies</h1>
+	
+	<p>Are you a movuie junkie? 
+	
+	<button id="getMovies" onclick="processAjaxRequest();">Click here</button> to view some of the upcoming movies for 2017.</p>
+	<pre>
+	<p id="display"></p>
+	
+	</pre>
+	
+	<script src="ajax-request.js">
+/*	function processAjaxRequest(){
+		//create xmlHttpRequest Object
+		var ajaxRequest = new XMLHttpRequest();
+		
+		//open the resource requested
+		ajaxRequest.open("GET","LatestMovies-2017.txt", true);
+		
+		//send the request to the server
+		ajaxRequest.send();
+		
+		//check whether the request is ready, and if so, grab and display the content
+		
+		ajaxRequest.onreadystatechange = function(){
+			if((ajaxRequest.readyState==4)&&(ajaxRequest.status==200)){
+				//display the content
+				document.getElementById("display").innerHTML = ajaxRequest.responseText;
+			}
+			
+		}
+		
+		
+	}
+	*/
+	
+	</script>
+		
+	</body>
+</html>

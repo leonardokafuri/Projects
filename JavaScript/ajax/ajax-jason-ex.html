@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	
+	<h1>Upcoming Latest Movies</h1>
+	
+	<p>Are you a movuie junkie? 
+	
+	<button id="getMovies" onclick="processAjaxRequest();">Click here</button> to view some of the upcoming movies for 2017.</p>
+	<pre>
+	<p id="display"></p>
+	
+	</pre>
+	
+	<script>
+	function processAjaxRequest(){
+		//create xmlHttpRequest Object
+		var ajaxRequest = new XMLHttpRequest();
+		
+		//open the resource requested
+		ajaxRequest.open("GET","drug_data1.json", true);
+		
+		//send the request to the server
+		ajaxRequest.send();
+		
+		//check whether the request is ready, and if so, grab and display the content
+		
+		ajaxRequest.onreadystatechange = function(){
+			if((ajaxRequest.readyState==4)&&(ajaxRequest.status==200)){
+				//display the content
+				
+				//parse response data and store in an Array
+				var arrJason = new Array();
+				 arrJason = JSON.parse(ajaxRequest.responseText);
+				
+				for(var i=0; i<arrJason.length; i++){
+					for (var key in arrJason[i])
+					{
+					document.getElementById("display").innerHTML +=key +": "  +arrJason[i][key] + "<br />";
+					
+				}
+				document.getElementById("display").innerHTML += "<br />-----------------------------------------<br />";
+				}
+				//document.getElementById("display").innerHTML = arrJason;
+			}
+			
+		}
+		
+		
+	}
+	
+	
+	</script>
+		
+	</body>
+</html>

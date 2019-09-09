@@ -1,0 +1,42 @@
+/* slide_Toggle CSS */
+	.title{
+	
+		display:block; 
+		line-height:48px;
+		vertical-align: center;
+		width:800px;  
+		margin-top: 20px;
+		padding-left: 10px;
+		background: #e3e6d0; 
+ 	}
+  
+
+	.icon {
+		position: absolute;
+		left: 998px; 
+		
+	
+	}
+
+	.titel_text {
+		padding-left: 10px;
+		margin-top: 20px;
+	
+	}
+
+
+	div {
+		margin: auto;
+	}
+
+	.title.expanded{
+     	 background: #e3e6d0; 
+	}
+	
+	.body_text{
+		width:800px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background: #e3e6d0;
+		display:none;
+	}

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<style>
+	
+	table, th, td{
+		
+	}
+	
+	.important{
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+	.textColor{
+		color: #ff0000;
+		
+		
+	}
+	
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Recipe: Skillet Apple Crisp</h1>
+<table>
+<tr>
+
+	<td>
+		<img src="images/apple-crisp.png" alt="Skillet apple crisp" />
+	</td>
+	<td>
+		<div id="div1" style="height:alt;width:400pxd;border:1px solid gray;padding:25px;margin:50px; background-color:#c0dafc;">
+			
+		<h2>INGREDIENTS</h2>
+		<ul id="list1">
+			<em>For the topping:</em>
+			<li>1 1/2 cups old-fashioned rolled oats</li>
+			<li>1 cup all-purpose flour </li>
+			<li>1/2 cup packed light brown sugar</li>
+			<li>1/2 teaspoon salt</li>
+			<li>12 tablespoons (6 ounces) unsalted butter, melted and cooled</li>
+			<li>1 teaspoon vanilla extract (optional)</li>
+		</ul>
+
+	<button id="btn1">Emphasize</button>
+		
+		<ul id="list2">
+			<em>For the filling:</em>
+			<li>2 pounds apples (about 4 large), cored and diced (no need to peel)</li>
+			<li>1/2 cup packed light brown sugar</li>
+			<li>2 tablespoons cornstarch</li>
+			<li>1 tablespoon freshly squeezed lemon juice</li>	
+		</ul>
+		
+		<h2>INSTRUCTIONS</h2>
+<ol>
+<li>Arrange a rack in the middle of the oven and heat to 350�F.</li>
+
+<li>Make the topping: Place the oats, flour, sugar, and salt in a large bowl and stir until combined. Drizzle the butter and vanilla if using over the oat mixture and stir to combine. The mixture should hold together when pressed; set aside.</li>
+
+<li>Make the filling: Place the sugar and cornstarch in a small bowl and whisk until lump-free; set aside while you cook the apples. </li>
+
+<li>Place an 8-inch ovenproof skillet over medium-high heat and add the apples. Saut� until tender and juicy, about 5 minutes. Add the sugar and cornstarch mixture and stir to coat. Remove from the heat and stir in the lemon juice. Scatter the oat topping evenly over the fruit.</li>
+
+<li>Bake until the fruit juices are bubbling around the edges of the baking dish and the topping is golden-brown and firm to the touch, 30 to 35 minutes. Cool on a wire rack for at least 15 minutes before serving.</li>	
+
+</ol>
+		</div>
+	</td>
+</tr>
+</table>
+
+<script>
+	$("#list1").addClass("important textColor");
+	
+	$("#list1").removeClass("important");
+	
+</script>
+<script>
+	$(document).ready(function(){
+	 $("#btn1").click(function(){
+	 	$("#list1").toggleClass("important textColor");
+
+	 })	;
+		
+	});
+</script>
+<!-- CSS METHODS --> 
+<script>
+	$("#list2").css({"list-style":"square", "color":"blue", "font-weight": "bold"});
+	
+	$("#list2 li").eq(1).css({"list-style":"circle", "color":"yellow", "font-weight": "bold"});
+	
+</script>
+
+<!-- Deleting element content--> 
+<script>
+	//$("ol").empty();
+	//$("#div1").empty();
+	
+</script>
+<!-- Deleting element content--> 
+<script>
+//$("#div1").remove();
+	
+</script>
+
+<!-- adding element content at the end --> 
+<script>
+	$("ol").append("<li>Whalla! </li>");
+	$("ol li").last().css({"font-weight":"bold", "color":"green"});
+	
+</script>
+<!-- adding element content at the begining --> 
+<script>
+	$("ol").prepend("<li>Cry </li>");
+	$("ol li").first().css({"font-weight":"bold", "color":"brown"});
+	
+</script>
+
+<!-- adding element content before ol --> 
+<script>
+	$("ol").before("<em>Here are the instructions<em>");
+	$("ol").prev().css({"font-style":"italic", "color":"white"});
+	
+</script>
+
+
+<script>
+	$("ol").after("<h3>~  Bon Appetit  ~<h3>");
+	$("ol").next().css({"font-style":"italic", "color":"gray","text-align":"center"});
+	
+</script>
+<!-- setting content attribute --> 
+<script>
+	//set attribute for last <ol> list item
+	//$("ol li:last").attr("style","text-decoration:underline");
+	$("ol li:last").attr("text-look","");
+	$("[text-look]").css({"text-decoration":"underline"});
+	
+</script>
+
+</body>
+</html>

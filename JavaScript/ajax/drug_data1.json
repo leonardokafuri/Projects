@@ -1,0 +1,10 @@
+[{"id":1,"drug_company":"Watson Laboratories, Inc.","drug_brand_name":"Fentanyl - NOVAPLUS","drug_generic_name":"Fentanyl","FDA_NDC_Code":"0591-3601"},
+{"id":2,"drug_company":"Delta Brands Inc","drug_brand_name":"Lucky Instant Hand Cleanser with Aloe Vera","drug_generic_name":"Ethyl Alcohol","FDA_NDC_Code":"20276-157"},
+{"id":3,"drug_company":"Pfizer Consumer Healthcare","drug_brand_name":"ADVIL","drug_generic_name":"ibuprofen","FDA_NDC_Code":"0573-0166"},
+{"id":4,"drug_company":"Rebel Distributors Corp","drug_brand_name":"Phentermine Hydrochloride","drug_generic_name":"Phentermine Hydrochloride","FDA_NDC_Code":"21695-510"},
+{"id":5,"drug_company":"Heritage Pharmaceuticals Inc.","drug_brand_name":"Carisoprodol and Aspirin","drug_generic_name":"Carisoprodol and Aspirin","FDA_NDC_Code":"23155-145"},
+{"id":6,"drug_company":"Bryant Ranch Prepack","drug_brand_name":"Orphenadrine Citrate","drug_generic_name":"Orphenadrine Citrate","FDA_NDC_Code":"63629-1564"},
+{"id":7,"drug_company":"Procter & Gamble Manufacturing Company","drug_brand_name":"Old Spice Fresh Collection Matterhorn","drug_generic_name":"aluminum zirconium trichlorohydrex gly","FDA_NDC_Code":"37000-746"},
+{"id":8,"drug_company":"Keltman Pharmaceuticals Inc.","drug_brand_name":"Butalbital, Acetaminophen and Caffeine","drug_generic_name":"BUTALBITAL AND ACETAMINOPHEN AND CAFFEINE","FDA_NDC_Code":"68387-520"},
+{"id":9,"drug_company":"Jubilant HollisterStier LLC","drug_brand_name":"Molds - Trichophyton Mix","drug_generic_name":"Molds - Trichophyton Mix","FDA_NDC_Code":"65044-5284"},
+{"id":10,"drug_company":"Chattem, Inc.","drug_brand_name":"Allegra D 12 Hour Allergy and Congestion","drug_generic_name":"fexofenadine hydrochloride and pseudoephedrine hydrochloride","FDA_NDC_Code":"41167-4310"}]

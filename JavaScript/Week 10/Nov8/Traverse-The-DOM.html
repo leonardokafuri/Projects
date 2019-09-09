@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.parents * { 
+    display: block;
+    border: 1px solid lightgrey;
+    color: blue;
+    padding: 5px;
+    margin: 15px;
+}
+
+.descendants * { 
+    display: block;
+    border: 1px solid lightgrey;
+    color: blue;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body> this is the opening body tag
+
+<h2 id="h2a">Ordered List</h2> h2 header 
+<div class="parents" style="width:500px;">div (current element) 
+<span id="span">
+
+	<ol> (ol parent)
+		<li id="li1">Item 1</li> 
+		<li>Item 2</li> 
+		<li>Item 3</li> 
+	</ol>
+</span>
+
+</div>
+
+<script>
+$(document).ready(function()
+{	
+	//moving up one level using parent method
+   //$("#li1").parent().css({"color": "red", "border": "2px solid red"});
+    
+    //moving up all the way to the root element  using parents method
+   // $("#li1").parents().css({"color": "red", "border": "2px solid red"});
+   
+   //if id use # if class use .classname  if tag use name of the tag
+    
+    // moving up till the parentsUntil method 
+	//$("#li1").parentsUntil('.parents').css({"color": "red", "border": "2px solid red"});
+    
+    
+    //moving down using childrn 
+    $("ol").children().css({"color": "red", "border": "2px solid red"});
+    
+    
+});
+</script>
+
+
+<h3>Description Lists </h3>
+<div class="descendants" style="width:500px;">
+<dl > 
+	<dt>Parents</dt> 
+		<dd>Jamie</dd> 
+		<dd>Charlie</dd> 
+	<dt>Children</dt> 
+		<dd>Landry</dd> 
+		<dd>Oakley</dd> 
+		<dd>Skyler</dd> 
+	    <dt>Pets</dt> 
+	<mytag  id="pets">
+		<dd>Cat</dd> 
+		<dd>Dog</dd> 
+		<dd>Gerbil</dd> 
+	</mytag>	
+</dl>
+</div>
+
+<script>
+	$(document).ready(function()
+{
+	//find the children of the div
+	//$(".descendants").children().css({"color": "red", "border": "2px solid red"});
+		
+	//	find children of specified element
+	//$(".descendants").find("#pets").css({"color": "red", "border": "2px solid red"});	
+	
+	//	find children of specified element
+	//$(".descendants").find("#pets").children().css({"color": "red", "border": "2px solid red"});
+	
+	
+	//	find all 
+	$("dl").find("*").css({"color": "red", "border": "2px solid red"});	
+	
+});
+</script>
+
+<h2>Nested Lists</h2>
+<ul> 
+	<li>Course A</li> 
+	<li id="B">Course B</li> 
+	<li>Course C</li>
+	<li>Course D</li>
+	<ul> 
+		<li>Course B section 1</li> 
+		<li>Course B section 2</li> 
+	</ul>
+	<li id="E">Course E</li>
+	<li>Course F</li>
+	<li>Course G</li>
+	<li>Course H</li>
+	<li id="I">Course I</li>
+	<li>Course J</li>
+	 
+	   
+
+
+</ul>
+
+<script>
+	$(document).ready(function()
+{
+	//	find next sibiling of E
+	//$("#E").next().css({"color": "red", "border": "2px solid red"});
+	
+	// find next all after E
+	//$("#E").nextAll().css({"color": "red", "border": "2px solid red"});
+	
+	//find until I
+	//$("#E").nextUntil("#I").css({"color": "red", "border": "2px solid red"});
+	
+	// find previous 
+    // $("#E").prev().css({"color": "red", "border": "2px solid red"});
+     
+     // find next all after E
+	//$("#E").prevAll().css({"color": "red", "border": "2px solid red"});
+	
+	//find until B
+	//$("#E").prevUntil("#B").css({"color": "red", "border": "2px solid red"});
+     
+     
+	
+		
+	
+});
+	
+</script>
+
+
+
+<h2>Filtering Elements</h2>
+<ul id="ul"> 
+	<li class="filter">Course A</li> 
+	<li class="filter">Course B</li> 
+	<li>Course C</li>
+	<li class="filter">Course D</li>
+	<ul> 
+		<li>Course B section 1</li> 
+		<li>Course B section 2</li> 
+	</ul>
+	<li>Course E</li>
+	<li class="filter">Course F</li>
+	<li class="filter">Course G</li>
+	<li>Course H</li>
+	<li class="filter">Course I</li>
+	<li class="filter">Course J</li>
+
+</ul>
+<script>
+	$(document).ready(function()
+{
+	//finding the first <li> of class filter 
+	//$('.filter').first().css({"color": "red", "border": "2px solid red"});
+	
+		//finding the first <li> of class filter 
+	//$('.filter').last().css({"color": "red", "border": "2px solid red"});
+	
+	//fiding D
+	//$('.filter').eq(3).css({"color": "red", "border": "2px solid red"});
+	
+	//find d children
+	//$('.filter').eq(2).next().css({"color": "red", "border": "2px solid red"});
+	
+	
+	//exclude methods that meet criteria using filter
+	//$('.filter').filter(".filter").css({"color": "red", "border": "2px solid red"});
+	
+	
+	//include elemets that dont meet criteria 
+	//$('#ul li').not('.filter').css({"color": "blue", "border": "2px solid blue"});
+	
+	//slice method 
+	$('.filter').slice(2,5).css({"color": "red", "border": "2px solid red"});
+	
+	
+	
+	
+	
+	
+});
+	
+</script>
+
+
+
+
+</body> this closes body tag
+</html>
